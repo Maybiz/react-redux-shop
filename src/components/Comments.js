@@ -11,7 +11,7 @@ const Comments = () => {
       dispatch(apiCall())
    }, [])
 
-   const displayApiData = !state.loaded ? (
+   const displayApiData = state.loaded ? (
       <p>Loading ...</p>
    ) : state.error ? (
       <p>{ state.error }</p>
